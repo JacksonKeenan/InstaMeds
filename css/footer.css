@@ -1,0 +1,40 @@
+footer {
+	background-color: #E8ECEF;
+  color: white;
+  padding: 2rem 0 2rem;
+}
+footer img {
+  height: 2.5rem;
+  margin: 1rem 0;
+}
+footer a,
+footer p{
+  color: #C42F69;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+}
+footer svg.svg-inline--fa:hover {
+  color: grey!important;
+}
+p.footer-quote {
+  font-style: italic;
+}
+.justify-content-center {
+	padding-bottom: 25px;
+	border-bottom: .05rem solid #C42F69!important;
+}
+.copyright {
+	margin-top: 30px;
+}
+strong{
+	font-weight: 550;
+	color: #C42F69;
+	padding-bottom: 10px;
+}
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+	margin-left: .5rem;
+	margin-right: .5rem;
+}

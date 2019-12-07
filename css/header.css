@@ -1,0 +1,64 @@
+/*-- Fix for Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  height: 60px;
+  -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.navbar-nontransparent{
+  background: rgba(88,26,62,0.7) !important;
+}
+.navbar-toggler-icon{
+	color: white;
+}
+.navbar-toggler {
+	float: right;
+}
+.navbar-nav{
+	float: left;
+}
+.navbar-nav button {
+	text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+  padding-top: .8rem;
+}
+.navbar-nontransparent .navbar-nav .nav-link {
+  color: white!important;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #DD439B;
+}
+.navbar-nontransparent .navbar-nav .nav-link:hover {
+  color: #DD439B!important;
+  padding-top: .8rem;
+}
+
+/*=== Responsive Elements ===*/
+@media (max-width: 767px) {
+  .navbar {
+    background: rgba(88,26,62,0.7) !important;
+    height: auto;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white!important;
+  }
+}

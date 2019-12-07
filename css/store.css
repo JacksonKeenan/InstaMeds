@@ -1,0 +1,406 @@
+body, html {
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+h2 {
+	font-size: 1.1rem;
+	color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+h3 {
+	font-size: .95rem;
+	color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+	font-style: italic;
+}
+/*=== Landing Page ===*/
+.video-background{
+  position: relative;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.0);
+}
+/*=== Fixed Video Background iOS/Mobile Style ===*/
+.video-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  width: 100%;
+  height: auto;
+	min-height: 100%!important;
+}
+#video {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+  z-index: -1000;
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%!important;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.text-center{
+	margin: 0 auto;
+}
+.store-wrapper {
+  margin: auto;
+	content: "";
+	display: block;
+  width: 60%;
+  background: rgba(88,26,62,0.8);
+  border-radius: 10px;
+  margin-top: 5rem;
+
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.store-wrapper a{
+	color: white;
+}
+.store-wrapper a:hover{
+	text-decoration: none;
+	color: #C42F69;
+}
+.store-wrapper a:hover{
+	text-decoration: none;
+}
+.store-wrapper h1{
+	font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.store-header{
+	width: 60%;
+	margin: 0 auto;
+}
+.previous-order {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+
+	background: rgba(0,0,0,0.15);
+}
+.previous-header {
+	width: 100%;
+}
+.previous-title {
+	width: 60%;
+	text-align: left;
+	padding-left: .75rem;
+
+	font-size: 1rem;
+	color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.previous-date {
+	width: 40%;
+	text-align: right;
+	padding-right: .75rem;
+
+	font-size: 1rem;
+	color: #C42F69;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.previous-details {
+	width: 60%;
+	text-align: left;
+	padding-left: .7rem;
+
+	font-size: .75rem;
+	color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+
+}
+.previous-price {
+	width: 40%;
+	text-align: right;
+	padding-right: .75rem;
+
+	font-size: 1rem;
+	color: #C42F69;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.store-header .col-md-4{
+	padding-top: 20px;
+}
+.store-header-underline{
+	width: 70%;
+  height: .2rem;
+  background-color: white;
+  margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.activeSection {
+  color: #C42F69!important;
+}
+.type-links{
+	color: white;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+.card{
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.0);
+	border-color: rgba(0,0,0,0.0);
+}
+.card img{
+	width: 7rem;
+	height: 7rem;
+}
+.card-info{
+	margin: 0 auto;
+}
+.card-info th {
+  text-align: left;
+  padding-right: 3rem;
+	font-size: .95rem;
+	color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-info td {
+  text-align: left;
+	font-size: .95rem;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.modal-header {
+    border-bottom: 0 none;
+}
+.modal-content {
+	background: white;
+}
+.modal-content table{
+	color: #C42F69;
+}
+.modal-content th {
+	text-align: left;
+  padding-right: 3rem;
+  text-transform: uppercase;
+}
+.modal-content td {
+	text-align: left;
+	text-transform: uppercase;
+}
+.modal-content p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #C42F69;
+	text-align: left;
+	font-size: .9rem;
+  font-weight: 500;
+}
+.modal-content img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 12rem;
+	height: 100%;
+	border:1px solid #C42F69;
+	border-radius: 3px;
+}
+.modal-content h4 {
+	color: #C42F69;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-left: 17rem;
+	margin-bottom: -10rem;
+}
+.btn-primary{
+	color: white !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	width: 8rem;
+	margin-top: 15px;
+	padding: 10px;
+	border: 2px solid white !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.btn-primary:hover {
+color: #ffffff !important;
+background: #C42F69;
+border-color: #C42F69 !important;
+transition: all 0.4s ease 0s;
+}
+.btn-secondary{
+	color: #C42F69 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	width: 8rem;
+	margin-top: 15px;
+	padding: 10px;
+	border: 2px solid #C42F69 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.order-buttons a{
+	margin-right: 2rem;
+	margin-bottom: 20px;
+}
+.order-buttons a:hover{
+	color: #ffffff !important;
+	background: #C42F69!important;
+	transition: all 0.4s ease 0s;
+}
+.toast {
+    visibility: hidden;
+    max-width: 450px;
+    height: 50px;
+    margin: auto;
+    background-color: #C42F69;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 3;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+.toast #img{
+	width: 50px;
+	height: 50px;
+  float: left;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  background-color: #111;
+  color: #fff;
+}
+.toast #desc{
+    color: #fff;
+    padding: 16px;
+    overflow: hidden;
+		white-space: nowrap;
+}
+.ToastShow {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@media (max-width: 768px) {
+	.previous {
+		margin-bottom: .5rem;
+	}
+	.modal-content h4 {
+		padding-left: 0rem;
+	}
+	.modal-content img {
+		margin-top: 40px;
+		margin-bottom: 10px;
+		width: 8rem;
+		height: 100%;
+		border:1px solid #C42F69;
+		border-radius: 5px;
+	}
+	.order-buttons .btn-primary{
+		width: 7rem;
+	}
+	.order-buttons a{
+		margin-right: .5rem;
+	}
+}
+@media (max-width: 1200px) {
+	.card-title{
+		height: 3rem;
+	}
+	.store-wrapper{
+		width: 96%;
+	}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+=============*/
