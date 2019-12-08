@@ -36,10 +36,8 @@ if (isset($_POST['order-confirm'])) {
       $message = "Order No. ". $order['order_id'] . "\n\nAddress: " . $order['order_address'] . "\n\nOrder: " . $order['order_details'] . "\n\nTotal: $" . $order['order_price'];
 
       // Your Account SID and Auth Token from twilio.com/console
-      $account_sid = 'AC7a7eddbe8ed30384b560aebcb29c6d1f';
-      $auth_token = '2d6e6b5c6b8d8e46cc50fb47bf00e821';
-      // In production, these should be environment variables. E.g.:
-      // $auth_token = $_ENV["TWILIO_AUTH_TOKEN"]
+      $account_sid = $_ENV["TWILIO_SID"];
+      $auth_token = $_ENV["TWILIO_AUTH_TOKEN"];
 
       // A Twilio number you own with SMS capabilities
       $twilio_number = "+12267807065";
