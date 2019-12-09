@@ -38,8 +38,6 @@ if (isset($_POST['order-confirm'])) {
       // Your Account SID and Auth Token from twilio.com/console
       $account_sid = getenv('TWILIO_SID');
       $auth_token = getenv('TWILIO_AUTH_TOKEN');
-      // In production, these should be environment variables. E.g.:
-      // $auth_token = $_ENV["TWILIO_AUTH_TOKEN"]
 
       // A Twilio number you own with SMS capabilities
       $twilio_number = "+12267807065";
