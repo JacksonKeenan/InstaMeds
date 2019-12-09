@@ -3,7 +3,7 @@
 if (isset($_POST['signup-submit'])) {
   require 'dbh.inc.php';
 
-  $activeStatus = 0;
+  $activeStatus = 1;
   $email = $_POST['email'];
   $password = $_POST['password'];
   $passwordConfirm = $_POST['password-confirm'];
