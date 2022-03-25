@@ -1,0 +1,85 @@
+/* about */
+.heading-underline-about {
+  width: 3rem;
+  height: .2rem;
+  background-color: white;
+  margin: 0 auto -3rem;
+}
+.about-txt{
+	padding-left: 15%;
+	padding-right: 10%;
+}
+.about-txt p{
+  margin: 1px;
+  color: white;
+	font-size: .95rem;
+	font-weight: 700;
+  padding-bottom: 10px;
+}
+.about-info{
+  padding-right: 7rem;
+}
+.about-info .loc{
+  padding-left: 1.5rem;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.about-info .hours{
+  margin: 0 auto;
+  margin-top: 1px;
+}
+.about-info p{
+  padding-top: 25px;
+  margin: 1px;
+  color: white;
+	font-size: .95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.about-vr{
+  border-right:2px solid #fff;
+  height:100%;
+}
+.hours th {
+  text-align: center;
+  padding-right: 3rem;
+  color: white;
+	font-size: .95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.hours td {
+  text-align: center;
+  color: white;
+	font-size: .95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .about-info{
+  	padding-left: 0rem;
+  	padding-right: 0rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-vr{
+    border-right:0px solid #fff;
+    height:100%
+  }
+  .about-vr{
+    width:100%
+  }
+  .about-info{
+    padding-top: 15px;
+  }
+  .about-info th, td, p{
+    font-size: .8rem!important;
+  }
+  .fa-map-marked-alt{
+    margin-top: 35px;
+  }
+  .fa-clock{
+    margin-top: 45px;
+  }
+}

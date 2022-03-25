@@ -1,0 +1,55 @@
+.jumbotron {
+  margin-bottom: 0;
+  padding: 1rem 0rem 3.5rem;
+  border-radius: 0;
+}
+h3.heading {
+	color: #C42F69;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #C42F69;
+  margin: 0 auto 7rem;
+}
+.menu-entry button{
+	color: #C42F69 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	padding: 10px;
+	border: 3px solid #C42F69 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.menu-entry button:hover {
+color: #ffffff !important;
+background: #C42F69;
+border-color: #C42F69 !important;
+transition: all 0.4s ease 0s;
+}
+.menu-entry .fa-cannabis,
+.menu-entry .fa-cookie-bite,
+.menu-entry .fa-tint{
+	color: #C42F69;
+}
+.menu-pad:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+.menu-pad .row {
+	padding-left: 20rem;
+	padding-right: 20rem;
+}
+@media (max-width: 1200px) {
+	.menu-pad .row {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+}
